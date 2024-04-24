@@ -10,7 +10,7 @@ class LeetcodeTool < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Darwin_x86_64.tar.gz"
-      sha256 "475e931a0537885ae7aacef289dfaf089cb28dadae72d8e7ddadd9518cfe62cc"
+      sha256 "b19ccb5174470948e658abc32975c226e0350288163e5096631302072ad0ba3d"
 
       def install
         bin.install "leetcode-tool"
@@ -18,7 +18,7 @@ class LeetcodeTool < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Darwin_arm64.tar.gz"
-      sha256 "0850c40f87e01316f638c800c2884a967270a49593059365c1995b4ef70b7fc8"
+      sha256 "70324f58b81ba4d3c71eee7993b678acfe59a9f7685198b0dbc87f80de2a7afc"
 
       def install
         bin.install "leetcode-tool"
@@ -29,7 +29,7 @@ class LeetcodeTool < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Linux_x86_64.tar.gz"
-      sha256 "3fb4187cee3e21a1e7de7f52fe2e08f9873f6311346d04c0bcaa8621a0571b2a"
+      sha256 "704387aafa197c4dd04ef610fb3ed4f3d59027cda2a8452e38b755f1aa56d755"
 
       def install
         bin.install "leetcode-tool"
@@ -37,7 +37,7 @@ class LeetcodeTool < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Linux_arm64.tar.gz"
-      sha256 "45bbd691507783a6825e7f86c29e9be7a4ebeebf0b591cd036f3da0e70554fa4"
+      sha256 "a2910cbb7cafc6dbc9e5a6def63fbb14f15e086a24b3a007ce8b4b1b574b8022"
 
       def install
         bin.install "leetcode-tool"
