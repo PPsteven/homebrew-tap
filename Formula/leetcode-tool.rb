@@ -5,20 +5,20 @@
 class LeetcodeTool < Formula
   desc "一个让你更方便刷题的工具"
   homepage "https://github.com/ppsteven/leetcode-tool"
-  version "1.2"
+  version "1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Darwin_x86_64.tar.gz"
-      sha256 "b19ccb5174470948e658abc32975c226e0350288163e5096631302072ad0ba3d"
+      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.3/leetcode-tool_Darwin_x86_64.tar.gz"
+      sha256 "8405845f997cc316018eb16b7441fe7d9c2d173a475ad91993de65b3d27e33d7"
 
       def install
         bin.install "leetcode-tool"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Darwin_arm64.tar.gz"
-      sha256 "70324f58b81ba4d3c71eee7993b678acfe59a9f7685198b0dbc87f80de2a7afc"
+      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.3/leetcode-tool_Darwin_arm64.tar.gz"
+      sha256 "bac32c1ca88574457b79eadb34fca3bc06825d3acd06e6b2fdb8d0f22f547b78"
 
       def install
         bin.install "leetcode-tool"
@@ -28,16 +28,16 @@ class LeetcodeTool < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Linux_x86_64.tar.gz"
-      sha256 "704387aafa197c4dd04ef610fb3ed4f3d59027cda2a8452e38b755f1aa56d755"
+      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.3/leetcode-tool_Linux_x86_64.tar.gz"
+      sha256 "03d310a056b776e8f5dbceecb4677564e491f2c195671b9f4f2e9900d7f711d8"
 
       def install
         bin.install "leetcode-tool"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.2/leetcode-tool_Linux_arm64.tar.gz"
-      sha256 "a2910cbb7cafc6dbc9e5a6def63fbb14f15e086a24b3a007ce8b4b1b574b8022"
+      url "https://github.com/PPsteven/leetcode-tool/releases/download/v1.3/leetcode-tool_Linux_arm64.tar.gz"
+      sha256 "9392566ef3b0295de2b19a1a02846b3980c48535bbf9239c81d258d072611483"
 
       def install
         bin.install "leetcode-tool"
